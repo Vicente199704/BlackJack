@@ -1,61 +1,49 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blackjack</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
-
 </head>
-<body>
-    
-    <header class="titulo">
-        Blackjack
-    </header>
-    
-    <div class="row mt-2r">
-        <div id="divBotones" class="col text-center">
-
-            <button id="btnNuevo" class="btn btn-danger">Nuevo</button>
-            <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir carta</button>
-            <button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button> 
-
-        </div>
-    </div>
-
-    <div class="row container">
-        <div class="col text-center">
-
-            <h1>Yo - <small>0</small></h1>
-            <div id="jugador-cartas" class="divCartas">
+<body class="fondoPantalla">
+    <header class="text-center">
+        <div class="barra">
+            <button class="btn btn-danger col-3 mt-3 boton">© 2022 Copyright:
+                Vicente Molina</button>
+        </div>    
+    </header>  
+   
+    <div class="contenedor row btn-danger align-items-center">
+       <div class="div1 col-md-12 col-sm-12 col-lg-12 col-xl-4  text-center m-3 ">
+           <div class="bg-dark p-3 rounded">
+           <h1>Reglas</h1>
+           <p>Si te pasas de los 21 puntos perderas, si logras los 21 ganaras a menos que tu oponente iguale tu marca, de la misma manera si estas bajo 
+               los 21 puntos y tu oponente supera tu puntaje sin pasarse de los 21 puntos el ganara.
+           </p>
             </div>
-
+       </div>
+       <div class="div2 col-md-12 col-sm-12 col-lg-12  col-xl-3 text-center m-3">
+           <h1>¿Que esperas?</h1>
+           <div>
+           <a href="index.html"><button class="btn btn-danger btn-lg mt-3 boton">Jugar Ahora</button></a>
+           </div>
+       </div>
+       <div class="div3 col-md-12 col-sm-12 col-lg-12  col-xl-4 text-center m-3">
+           <div class="bg-dark p-3 rounded">
+           <h1>Normas Basicas</h1>
+           <p>El blackjack, también llamado veintiuno, es un juego de cartas, propio de los casinos con una o más barajas inglesas de 52 cartas sin los comodines, que consiste en sumar un valor lo más próximo a 21 pero sin pasarse. En un casino cada jugador de la mesa juega únicamente contra el crupier, intentando conseguir una mejor jugada que este.</p>
+          </div>
         </div>
     </div>
 
-    <div class="row container">
-        <div class="col text-center">
-            <h1>Oponente - <small>0</small></h1>
-            <div id="computadora-cartas" class="divCartas">
-            </div>
-
+    <footer class="page-footer font-small blue bg-dark">
+        <div class="footer-copyright text-center py-3">© 2022 Copyright:
+            Vicente Molina
         </div>
-    </div>
-
-
-    <script src="assets/js/underscore-min.js"></script>
-    <script src="assets/js/juego.js"></script>
-
-    <script>
-        console.log( miModulo );
-        document.querySelector('#btnNuevo').addEventListener('click', () => {
-            miModulo.nuevoJuego();
-        })
-    
-    </script>
-
+      </footer>
 
 </body>
 </html>
